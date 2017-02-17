@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index-winner</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+
+	}
+	.containner{
+		background-color: #ffffff;
+	}
+	.container-inner{
+		/* width: 940px; */
+		width: 64.34%;
+		margin: 0 auto;
+		/*background-color: blue;*/
+	}
+	@font-face{
+		font-family: 'top-p';
+  		src: url('fonts/BebasNeue-webfont.eot') ,
+  		url('fonts/BebasNeue-webfont.svg'),
+ 		url('fonts/BebasNeue-webfont.ttf'),
+ 		url('fonts/BebasNeue-webfont.woffd');
+	}
+	@font-face{
+		font-family: 'main-p';
+  		src: url('fonts/ColabThi-webfont.eot') ,
+  		url('fonts/ColabThi-webfont.svg'),
+ 		url('fonts/ColabThi-webfont.ttf'),
+ 		url('fonts/ColabThi-webfont.woff');
+	}
+	@font-face{
+		font-family: 'main-p1';
+  		src: url('fonts/Vera-webfont.eot') ,
+  		url('fonts/Vera-webfont.svg'),
+ 		url('fonts/Vera-webfont.ttf'),
+ 		url('fonts/Vera-webfont.woff');
+	}
+	@font-face {
+  		font-family: 'iconfont';
+  		src: url('fonts/iconfont.eot');
+  		src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  		url('fonts/iconfont.woff') format('woff'),
+  		url('fonts/iconfont.ttf') format('truetype'),
+  		url('fonts/iconfont.svg#iconfont') format('svg');
+	}
+	.iconfont{
+  		font-family:"iconfont" !important;
+  		font-size:28px;font-style:normal;
+  		-webkit-font-smoothing: antialiased;
+  		-webkit-text-stroke-width: 0.2px;
+  		-moz-osx-font-smoothing: grayscale;
+  		color: #ffffff;
+	}
+	/*@media screen and (max-width:700px){
+		.main .main-right{width: 100%;}
+		.main .main-left{width: 100%;}
+	}*/
+	
+	header{
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	header img{
+		width: 100%;
+	}
+	header p{
+        font-size: 3.6rem;
+	    margin-top: 34px; 
+		font-family:top-p;
+		text-shadow: -1px 1px 0 #ccc;
+		
+	}
+	header p span{
+		color: #ccc;
+	}
+	nav{
+		display: table;
+		/* width: 940px; */
+		width: 100%;
+		line-height: 34px;
+		margin-top: 36px;
+		background:linear-gradient(#f7f7f7,#e5e5e5);
+		
+	}
+	nav ul{
+		display: table-row;
+		/* width: 940px; */
+		width: 64.33%;
+	}
+	nav>ul>li{
+		display: table-cell;
+		list-style: none;
+		line-height: 34px;
+		text-align: center;
+	}
+	nav li:last-child{
+		 margin-right: 0;
+		margin-left: 1.86%; 
+	}
+	nav>ul>li>a{
+        text-decoration: none;
+        color: #000;
+        font-size: 2.2rem;
+        font-family: top-p;
+	}
+	nav>ul>li>a>span{
+		color: red;
+		font-size: 2.2rem;
+		font-family: top-p;
+	}
+	@keyframes nav1{
+		0%{text-shadow: 1px 1px 19px #000;}
+		50%{text-shadow: 3px 2px 29px #000;}
+        80%{text-shadow: 5px 5px 59px #000;}
+		100%{text-shadow: 1px 1px 19px #000;}
+	}
+	nav>ul>li:hover a{
+		animation:nav1 2s linear infinite;
+	}
+	.main{
+		width: 100%;
+		/*height: 590px;*/
+		border-bottom: 5px #d5d5d5 double;
+		overflow: hidden;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		border-top: 5px #d5d5d5 double;
+	}
+	.main-left{
+		/* width: 243px; */
+		width: 28.53%;
+		/* height: 554px; */
+		margin-top: 22px;
+		border-right: 1px #161515 solid;
+		border-bottom: 1px #161515 solid;
+		box-shadow: 4px 4px 9px 2px #ccc;
+		float: left;
+		 padding-bottom: 10px; 
+	}
+	 /* .main-left img{
+	 		width: 100%;
+	 	}
+	 	.article-1{
+	 		width: 99.55%;
+	 		height: 224px;
+	 	}
+	 	.article-1 h3{
+	 		width: 100%;
+	 		margin-top: 35px;
+	 		font-size: 2.5rem;
+	 		font-family:top-p;
+	 		font-weight: 500;
+	 	}
+	 	.article-1 ul{
+	 		width: 100%;
+	 		overflow: hidden;
+	 	}
+	 	.article-1 li{
+	 		width: 50%;
+	        float: left;
+	        list-style: none;
+	        margin-right: 10px;
+	        margin-top: 27px;
+	 	}  */
+	.main-left article{
+	 		width: 90%;
+	 		padding-left: 3.92%;
+
+	 	}
+	.main-left article h3{
+	 		width: 100%;
+	 		margin-top: 35px;
+	 		font-size: 2.5rem;
+	 		font-family:top-p;
+	 		font-weight: 500;
+	 		margin-bottom: 38px;
+	 	}
+    .main-left article img{
+    	width: 46%;
+    }
+	.main-left>article>.img1,.main-left>article>.img3{
+		transform:rotate(-10deg) translate(10px,0);
+		animation:li-img 1s linear;
+		float: left;
+	}
+	.main-left>article>.img2,.main-left>article>.img4{
+		transform:rotate(10deg);
+		animation:li-img 1s linear;
+		float: right;
+	}
+	.main-left>article:nth-child(odd)>a{
+		float: left;
+	}
+	.main-left>article:nth-child(even)>a{
+		float: right;
+	}
+	@keyframes li-img{
+		0%{transform:rotate(-10deg);}
+		30%{transform:rotate(25deg);}
+		60%{transform:rotate(-10deg);}
+		100%{transform:rotate(20deg);}
+	}
+	.main-left article a{
+		display: block;
+		text-decoration: none;
+		color: #898788;
+		text-align: center;
+		line-height: 25px;
+		/* width: 100px; */
+		width: 46%;
+		background-color: #cdcdcd;
+		border-radius: 10px;
+		margin-top: 30px;
+		margin-bottom: 29px;
+		margin-left: 5.42%;
+	}
+	.main-left a:hover{
+       box-shadow: 0px 4px 10px 1px #000;
+	}
+/* 	.article-2{
+	width: 100%;
+}
+.article-2 ul{
+	width: 100%;
+	overflow: hidden;
+}
+.article-2 li{
+	width: 50%;
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+        margin-top: 27px;
+}
+.article-2 a{
+	display: block;
+	text-decoration: none;
+	color: #898788;
+	text-align: center;
+	line-height: 25px;
+	width: 100px;
+	width: 100%;
+	height: 25px;
+	background-color: #cdcdcd;
+	border-radius: 10px;
+	margin-top: 14px;
+}
+.article-2 h3{
+	width: 100%;
+	margin-top: 29px;
+	font-size: 2.5rem;
+	font-family: top-p;
+	font-weight: 500;
+} */
+	.main-right{
+	/* 	width: 718px; */
+		width: 70.79%;
+		float: right;
+		overflow: hidden;
+		padding-top: 20px;
+	}
+	.main-right img{
+		/* display: block; */
+		/*  width: 195px;  */
+		width: 26.49%;
+		margin-top: 30px;
+		margin-left: 4.83%;
+		float: left;
+		
+	}
+	.main-right article{
+		/* width: 403px; */
+		width: 52.05%;
+		float:left;
+		margin-left: 3.25%;
+	}
+	.main-right h2{
+		font-size: 7.6rem;
+		margin-top: 56px;
+		font-family: top-p;
+	}
+    .main-right>article>span{
+    	font-size: 3rem;
+    	line-height: 45px;
+    	color: #767475;
+    	font-family: main-p1;
+    }
+    .main-right>article>p{
+    	line-height: 30px;
+    	font-size: 2.4rem;
+    	color: #999999;
+    	font-family: main-p;
+    }
+    .main-right>article>p>strong{
+    	color: #747474;
+    }
+    .main-right>article>p>span{
+    	text-decoration: underline;
+    }
+    .main-right>article>a{
+    	display: block;
+    	/* width: 400px; */
+    	width: 99.25%;
+    	background: linear-gradient(#f25d61,#ae191d);
+    	border-radius: 9px;
+    	color: #ffffff;
+    	text-decoration: none;
+    	text-align: center;
+    	line-height: 91px;
+    	font-size: 2.8rem;
+    	margin-top: 33px;
+    	font-family: top-p;
+    	box-shadow: 1px 1px 0px 0 #000;
+    	transition:all 2s ease-in; 
+    }
+   .main-right>article>a>i{
+    	transition:all 2s ease-in 1s; 
+    	color: #ffffff;text-shadow: 1px 2px 1px #000;
+    }
+    .main-right>article>a:hover i{
+    	color: #000;text-shadow: 1px 2px 1px #ffffff;
+    }
+    .main-right>article>a:hover{
+    	box-shadow: 1px 2px 0px 2px #ffffff;
+    }
+    .main-right>article>a>span{
+    	transition:all 2s ease-in; 
+    	color: #ffffff;text-shadow: 1px 2px 1px #000;
+    }
+    .main-right>article>a:hover span{
+    	color: #000;text-shadow: 1px 2px 1px #ffffff;
+    }
+    
+    footer p{
+    	margin-top: 33px;
+    	margin-bottom: 35px;
+    	color: #747474;
+    	text-align: center;
+    	font-weight: bold;
+    	font-size: 1.3rem;
+    }
+    footer>div{
+    	/* width: 938px; */
+    	width: 100%;
+    	background-image: url(images/footer-img.png);
+    	
+    }
+    html,body{
+		font-size: 10px;
+	}
+    @media screen and (max-width:900px){
+		.main .main-left{width:100%;}
+		.main .main-right{width:100%;}
+	}
+	@media screen and (max-width:1000px){
+		html,body{font-size: 8px}
+	}
+	@media screen and (max-width:842px){
+		html,body{font-size: 12px}
+	}
+	 @media screen and (max-width:2000px){
+	    .main-left>article>a{width:44%;}
+	} 
+	@media screen and (max-width:700px){
+	    header>nav{display: block;width:3%;background:none;}
+	    header>nav>ul{display: block;width:100%;}
+	    header>nav>ul>li{display: block;width:100%;}
+	}
+	@media screen and (max-width:500px){
+	    .main .margin-right>img{width:100%;}
+		.main .main-right>article{width:100%;}
+	}  
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container-inner">
+			<header>
+				<img src="images/top1.png">
+				<p>AND THE WINNER IS<span>N'T...</span></p>
+				<nav>
+					<ul>
+						<li><a href="#"><span>WHY?</span></a></li>
+						<li><a href="#">SYNOPSIS</a></li>
+						<li><a href="#"><span>STILLS/PHOTOS</span></a></li>
+						<li><a href="#">VIDEOS/CLIPS</a></li>
+						<li><a href="#"><span>QUOTES</span></a></li>
+						<li><a href="#">QUIZ</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="main">
+				<section class="main-right">
+					<img src="images/ren.png">
+					<article>
+						<h2>EVERY YEAY</h2>
+						<span>
+							WHEN I WATCH THE<br>
+							OSCARS I'M ANNOYED...
+						</span>
+						<p>
+							Chances are always there.<strong>We have to grab every single</strong>  opportunity...to help,to love and to <span>serve</span>. To live our life happier full of joy, we have to set our goal and even dream big. If we choose the shortest path in life
+						</p>
+						<a href="#"><span>THESE SHOULD HAVE WON</span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="iconfont">&#xe6bb;</i></a>
+					</article>
+				</section>
+				<section class="main-left">
+					<article>
+						<h3>UNSUNG HEROES...</h3>
+						<img class="img1" src="images/article-1.gif">
+						<img class="img2" src="images/article-2.gif">
+						<a class="a1" href="#">full info</a>
+						<a class="a2" href="#">full info</a>
+						<h3>OVERHYPED NONSEYSD...</h3>
+						<img class="img3" src="images/article-3.gif">
+						<img class="img4" src="images/article-4.gif">
+						<a class="a3" href="#">full info</a>
+						<a class="a4" href="#">full info</a>
+					</article>
+				</section>		
+			</section>
+			<footer>
+				<p>NOTE: OUR OPINION ABSOLUINTIY. YOU ARE WORD,EVEV IF YOU THINK YOU ARE RIGHT. THAP'SA FACP.DEAL WITH IT.</p>
+			    <div></div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
